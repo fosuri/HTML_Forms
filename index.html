@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="/images/html_logo.png" alt="logo">
+            <nav>
+                <!-- <h1>HTML Формы</h1> -->
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#bottom">Вниз</a></li>
+                    <li><a href="#top">Вверх</a></li>
+                  </ul>
+            </nav>
+        </header>
+        <br><br><br><br>    
+        <main>
+            <section>
+                <article>
+                    <h2>Общее описание</h2>
+                    <p>
+                        HTML формы являются элементами управления, которые применяются для сбора информации от посетителей веб-сайта. 
+                        Веб-формы состоят из набора текстовых полей, кнопок, списков и других элементов управления, которые активизируются щелчком мыши. Технически формы передают данные от пользователя удаленному серверу. Для получения и обработки данных форм используются языки веб-программирования, такие как PHP, Perl.
+
+                    </p>
+                </article>
+
+                <article>
+                    <h2>Создание формы</h2>
+                    <p>
+                        Форма начинается с парного тега &lt;form&gt;&lt;/form&gt;. Тег &lt;form&gt; удерживает все элементы управления формы, которые также называются <i><b>полями</b></i>. Атрибуты этого элемента содержат информацию, общую для всех полей формы, поэтому в одну форму нужно включать поля, объединенные логически.
+
+                    </p>
+                    <img src="/images/form1.png" alt="form">
+
+                    <ul>
+                        <li>
+                            Атрибут <b>name</b>. Значение этого атрибута означает имя HTML формы.
+                        </li>
+                        <li>
+                            Атрибут <b>action</b>. Значение этого атрибута отвечает за путь к файлу скрипта, который будет обрабатывать форму. То есть мало ввести данные в форму, их же ведь ещё нужно соответствующим образом обработать, и вот как раз путь к этому файлу-обработчику и находится в значении атрибута <b>action</b>.
+
+                        </li>
+                        <li>
+                            Атрибут <b>method</b>. У него может быть одно из двух значений: <b>post</b> или <b>get</b>. Этот атрибут определяет способ отправки. Первый способ является скрытой отправкой данных, а второй открытой.
+                        </li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Добавление текстового поля</h2>
+                    <p>
+                        Добавляется текстовое поле с помощью тега &lt;input&gt;, а точнее с помощью атрибута этого тега <b>type</b> со значением <b>text</b>.
+                    </p>
+                    <img src="/images/form_input_text.png" alt="form_input_text">
+
+                    <ul>
+                        <li>
+                            Атрибут <b>type</b> отвечает за тип элемента ввода. В данном случае, мы указали, что это обычное текстовое поле. 
+                        </li>
+                        <li>
+                            Атрибут <b>name</b> отвечает за имя элемента. Здесь мы указали, что имя данного поля <b>firstname</b>.
+                        </li>
+                        <li>
+                            Атрибут <b>value</b> отвечает за значение этого поля по умолчанию.
+                        </li>
+                    </ul>
+
+                    <form>
+                        <fieldset>
+                            <legend>Текстовое поле</legend>
+                            <div class="fieldset-main">
+                                <div class="fieldset-field">
+                                    <form >
+                                        <label for="f_name">Имя: </label>
+                                        <input type="text" name="f_name" placeholder="Введите Ваше имя">
+                                    </form>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article>
+                    <h2>Добавление текстового поля для ввода пароля</h2>
+                    <p>
+                        Однострочное текстовое поле для ввода не обычных символов, а ввода пароля, то есть текст должен быть скрыт точками.
+                    </p>
+                    <img src="/images/form_input_password.png" alt="form_input_password">
+                    <p>
+                        Теперь значением атрибута <b>type</b> является <b>password</b>. Остальные атрибуты те же, что и для обычного текстового поля.
+                    </p>
+
+                    <form>
+                        <fieldset>
+                            <legend>Текстовое поле для пароля</legend>
+                            <div class="fieldset-main">
+                                <div class="fieldset-field">
+                                    <label for="password">Имя: </label>
+                                    <input type="password" name="password" placeholder="Введите Ваш Пароль">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article>
+                    <h2>Добавление выпадающего списка</h2>
+                    <p>
+                        Состоит из объявления создания выпадающего списка и добавления элементов списка.
+                    </p>
+                    <img src="/images/form_select_choice.png" alt="form_select_choice">
+                    <p>
+                        Тег &lt;select&gt; означает начало выпадающего списка. Заканчивается список тегом &lt;/select&gt;. Элементы списка создаются с помощью тега &lt;option&gt;. Значение атрибута value означает, какое значение будет у переменной choice, то есть либо choice = 1, либо choice = 2, либо choice = 3. Сразу после окончания описания тега &lt;option&gt; ставится то, что увидит пользователь в выпадающем списке.
+                    </p>
+
+                    <form>
+                        <fieldset>
+                            <legend>Выпадающий список</legend>
+                            <div class="fieldset-main">
+                                <div class="fieldset-field">
+                                    <select name="choice">
+                                        <option value="1">Вариант 1</option>
+                                        <option value="2">Вариант 2</option>
+                                        <option value="3">Вариант 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article>
+                    <h2>Добавление текстовой области</h2>
+                    <p>
+                        Для добавления текстовой области используется тег <b> &lt;textarea&gt; </b>.
+                    </p>
+                    <img src="/images/form_input_textarea.png" alt="form_input_textarea">
+                    <p>
+                        Создана текстовая область высотой в 10 строк (значение атрибута <b>rows</b>) и шириной в 45 символов (значение атрибута <b>cols</b>). Внутри этого парного тега указывается текст в текстовой области по умолчанию.
+                    </p>
+
+                    <form>
+                        <fieldset>
+                            <legend>Текстовая область</legend>
+                            <div class="fieldset-main">
+                                <div class="fieldset-field">
+                                    <textarea name="message" id="" cols="100" rows="10" placeholder="Сообщение"></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                </article>
+
+                <article>
+                    <h2>Добавление радиокнопки</h2>
+                    <p>
+                        <b>Радиокнопка или переключатель (radio-button)</b> - элемент интерфейса, который позволяет пользователю выбрать один пункт из предопределенного набора (группы). Для создания радиокнопки используется тег &lt;input&gt; типа <b>radio</b>.
+                    </p>
+                    <img src="/images/form_input_radio.png" alt="form_input_radio">
+                    <ul>
+                        <li>
+                            Атрибут <b>name</b> отвечает не только за задание имени, но и одна группа радиокнопок должна иметь одно и то же значение атрибута <b>name</b>. Если НЕ сделать одинаковыми имена у этих трёх радиокнопок, то они станут независимыми, а, следовательно, можно будет выбрать сразу несколько вариантов.
+                        </li>
+                        <li>
+                            Атрибут <b>value</b> означает значение переменной <b>choiceradio</b>. Сразу после описания тега &lt;input&gt; идёт текст, который увидит пользователь рядом с соответствующей радиокнопкой.
+                        </li>
+                    </ul>
+
+                    <form>
+                        <fieldset>
+                            <legend>Радиокнопки</legend>
+                            <div class="fieldset-main">
+                                <div class="fieldset-field">
+                                    <input type="radio" name="choiceradio" value="1"> 
+                                    <label for="choiceradio">Вариант 1</label><br>
+                                    <input type="radio" name="choiceradio" value="2"> 
+                                    <label for="choiceradio">Вариант 2</label><br>
+                                    <input type="radio" name="choiceradio" value="3"> 
+                                    <label for="choiceradio">Вариант 3</label><br>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article>
+                    <h2>Добавление переключателей</h2>
+                    <p>
+                        <b>Переключатели (checkbox)</b> создаются с помощью тега &lt;input&gt; типа <b>checkbox</b>.
+                    </p>
+                    <img src="/images/form_input_checkbox.png" alt="form_input_checkbox">
+                    <p>
+                        Если флажок будет стоять, то значение переменной <b>terms</b> будет <b>yes</b>, если не будет стоять, то значение этой переменной будет "", то есть пустой строкой.
+                    </p>
+
+                    <form>
+                        <fieldset>
+                            <legend>Переключатели</legend>
+                            <div class="fieldset-main">
+                                <div class="fieldset-field">
+                                    <input type="checkbox" name="terms" value="yes">
+                                    <label for="choiceradio">Вариант 1</label><br>
+                                    <input type="checkbox" name="terms" value="yes">
+                                    <label for="choiceradio">Вариант 2</label><br>
+                                    <input type="checkbox" name="terms" value="yes">
+                                    <label for="choiceradio">Вариант 3</label><br>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article>
+                    <h2>Добавление поля для выбора файла</h2>
+                    <p>
+                        При загрузке файла на сервер, часто приходится использовать поле вставки имени файла, которое создается с помощью тега &lt;input&gt; типа <b>file</b>.
+                    </p>
+                    <img src="/images/form_input_file.png" alt="form_input_file">
+
+                    <form>
+                        <fieldset>
+                            <legend>Переключатели</legend>
+                            <div class="fieldset-main">
+                                <div class="fieldset-field">
+                                    <input type="file" name="path">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article>
+                    <h2>Кнопки</h2>
+                    <h3>1. Обычная кнопка</h3>
+                    <p>
+                        Создается кнопка, которая сама по себе не совершает никаких действий и не отправляет форму на сервер. Это многофункциональная кнопка, управляемая JavaScript (обычно через событие click).
+                    </p>
+                    <img src="/images/form_input_button1.png" alt="form_input_button1">
+                    <ul>
+                        <li>
+                            Значение атрибута <b>type</b> - <b>button</b>,  сообщает браузеру, что это кнопка.
+                        </li>
+                        <li>
+                            Атрибут <b>name</b> - это имя кнопки. 
+                        </li>
+                        <li>
+                            Значение атрибута <b>value</b> отвечает за текст на кнопке.
+                        </li>
+                    </ul>
+
+                    <form>
+                        <fieldset>
+                            <legend>Обычная кнопка</legend>
+                            <div class="fieldset-main">
+                                <div class="fieldset-field">
+                                    <input type="button" name="start" value="Начать">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <h3>2. Kнопка submit</h3>
+                    <p>
+                        Kнопка <b>submit</b>, при нажатии на которую форма отправляется на обработку к файлу, указанному в атрибуте <b>action </b> тега <b>&lt;form&gt;</b>.
+                    </p>
+                    <img src="/images/form_input_button2.png" alt="form_input_button2">
+
+                    <form>
+                        <fieldset>
+                            <legend>Kнопка submit</legend>
+                            <div class="fieldset-main">
+                                <div class="fieldset-field">
+                                    <input type="submit" value="Отправить">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <h3>3. Kнопка Reset</h3>
+                    <p>
+                        Создается кнопка для очистки формы.
+                    </p>
+                    <img src="/images/form_input_button3.png" alt="form_input_button3">
+
+                    <form>
+                        <fieldset>
+                            <legend>Kнопка Reset</legend>
+                            <div class="fieldset-main">
+                                <div class="fieldset-field">
+                                    <input type="reset" value="Очистить">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <h3>Kнопка Submit в виде изображения</h3>
+                    <p>
+                        Загружает изображение, которое используется вместо кнопки Submit. Для работы тег &lt;input&gt; должен содержать также атрибут <b>src</b>, указывающий путь к изображению.
+                    </p>
+                    <img src="/images/form_input_button4.png" alt="form_input_button4">
+                    <input type="image" src="/images/form_input_button4.png" alt="button image">
+                </article>
+            </section>
+        </main>
+    
+    </div>
+</body>
+</html>

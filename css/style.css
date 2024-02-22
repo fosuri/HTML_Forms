@@ -3,29 +3,157 @@ body {
     color: azure;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.oswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .wrapper {
     width: 1388px;
     margin: auto;
-    background-color: rgba(200, 200, 200, 0.5);
+    /* background-color: rgba(200, 200, 200, 0.5); */
 }
 
 header {
-    background-color: #2c99f3;
-    margin-top: -8px;
-    position: fixed;
-    width: 1388px;
+    background-color: #6F779D;
+    /* margin-top: -8px; */
+    /* position: fixed; */
+    width: 1088px;
     height: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-left: 300px;
+    box-shadow: 0px 2px 5px white;
 }
 
 
 header img {
     width: 70px; 
     height: auto;
-    vertical-align: middle;
     float: left;
     padding-right: 20px;
     padding-left: 20px;   
+}
+
+header h1 {
+    margin: 0;
+    float: left;
+    position: relative;
+    top: 10px;
+}
+
+header table {
+    position: relative;
+    top: 15px;
+    left: 595px;
+    font-size: 26px;
+}
+
+table td {
+    padding: 0 10px;
+}
+
+
+.aside-left {
+    width: 300px;
+    /* background-color: green; */
+    /* float: left; */
+    position: fixed;
+    top: 0px;
+
+}
+
+main {
+    /* float: left; */
+    /* position: relative; */
+    width: 1048px;
+    padding: 0 20px;
+    margin-left: 300px;
+    /* background-color: greenyellow; */
+}
+
+p, ol, ul, li, i, b {
+    font-size: 18px;
+}
+
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    color: azure;
+    text-decoration: none;
+}
+
+ol li:hover {
+    background-color: rgba(44, 153, 243);
+
+}
+
+ol, ul, fieldset, input{
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+}
+
+.red-text {
+    color: rgb(255, 45, 45);
+}
+
+.green-text {
+    color: rgb(79, 250, 79);
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+fieldset {
+    border-radius: 20px;
+}
+
+legend {
+    font-size: 24px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.fieldset-main {
+    padding: 0px 20px 10px 20px;
+}
+
+footer {
+    clear: both;
+    background-color: #6F779D;
+    /* margin-top: -8px; */
+    /* position: fixed; */
+    width: 1388px;
+    height: 70px;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0px;
+}
+
+footer table{
+    margin: 0 auto;
+    margin-top: 16px;
+    font-size: 26px;
 }
 

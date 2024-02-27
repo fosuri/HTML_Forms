@@ -66,6 +66,14 @@ table td {
     padding: 0 10px;
 }
 
+.header-nav {
+    margin-left: 50px;
+    float: left;
+    position: relative;
+    font-size: 20px;
+    top: 25px;
+
+}
 
 .aside-left {
     width: 300px;
@@ -113,6 +121,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Oswald", sans-serif;
 }
 
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 .red-text {
     color: rgb(255, 45, 45);
 }
@@ -157,3 +173,18 @@ footer table{
     font-size: 26px;
 }
 
+input[type="reset"] {
+    background-color: #6f779d;
+    border: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    color: azure;
+}
+
+input[type="reset"]:hover {
+    background-color: #a7acc5;
+}
+
+textarea {
+    float: left;
+}

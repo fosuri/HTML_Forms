@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="/css/restaurant.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <h1>РЕСТОРАН "ВАУ, ВОТ ЭТО ПРИКОЛЬНОЕ НАЗВАНИЕ"</h1>
+
+            <div class="content">
+                <h2>Анкета поситителя ресторана</h2>
+
+                <form>
+                    <fieldset>
+                        <legend>Контактные данные</legend>
+                        <table>
+                            <tr>
+                                <td><label for="fname">Имя</label></td>
+                                <td><input type="text" name="fname" id="fname" placeholder="Введите имя"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="lname">Фамилия</label></td>
+                                <td><input type="text" name="lname" id="lname" placeholder="Введите фамилию"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="email">E-mail</label></td>
+                                <td><input type="email" name="email" id="email" placeholder="Введите электронный адресс"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="phone">Телефон</label></td>
+                                <td><input <input type="text" id="phone" name="phone" placeholder="Введите номер мобильного телефона"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Персональная информация</legend>
+                        
+                        <div class="input-div">
+                            <label for="sex">Ваш пол: </label>
+                            <input type="radio" name="sex" value="1"> <label for="sex">Женский</label>
+                            <input type="radio" name="sex" value="2"> <label for="sex">Мужской</label>
+                        </div>
+
+                        <div class="input-div">
+                            <label for="age">Возраст: </label>
+                            <input type="number" id="age" name="age" min="6" max="100">
+                        </div>
+
+                        <div class="input-div">
+                            <label for="favcolor">Ваш любимый цвет?</label>
+                            <input type="color" name="favcolor" id="favcolor">
+                        </div>
+
+                        <div class="input-div">
+                            <label for="info">Откуда о нас узнали?</label>
+                            <select name="info">
+                                <option value="1">Выберите из списка</option>
+                                <option value="2">... кухня</option>
+                                <option value="3">... кухня</option>
+                                <option value="4">... кухня</option>
+                                <option value="5">... кухня</option>
+                            </select>
+                        </div>
+
+                        <div class="input-div">                    
+                            <label for="dishes">Какие блюда Вы бы хотели видеть в меню?</label>
+                            <br>
+                            <textarea name="message" id="dishes"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Оценка нашего заведения</legend>
+                        <div class="input-div">                    
+                            <label for="datetime">Дата и время посещения</label>
+                            <input type="datetime-local" name="datetime" id="datetime">
+                        </div>
+
+                        <div class="input-div">
+                            <label for="reason">Почему вы выбрали наше заведение?</label><br>
+                            <input type="radio" name="reason" value="1"> <label for="reason"><i>Недалеко от дома/работы</i></label> <br>
+                            <input type="radio" name="reason" value="2"> <label for="reason"><i>Увидел рекламу</i></label> <br>
+                            <input type="radio" name="reason" value="3"> <label for="reason"><i>Посоветовали</i></label> <br>
+                            <input type="radio" name="reason" value="4"> <label for="reason"><i>Соотношение цены и качества</i></label> <br>
+                        </div>
+
+                        <div class="input-div">
+                            <label for="rating">Как Вы оцениваете наше заведение? (по 5-ти бальной системе)</label>
+                            <input type="range" name="rating" id="rating" min="1" max="5" >
+                        </div>
+                        
+                        <div class="input-div">
+                            <label for="recommendtation">Вы будете рекомендовать наше заведение своим знакомым?</label><br>
+                            <input type="radio" name="recommendtation" value="1"> <label for="recommendtation">Да</label> <br>
+                            <input type="radio" name="recommendtation" value="2"> <label for="recommendtation">Нет</label> <br>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Дата заполнения анкеты</legend>
+                        <div class="input-div">
+                            <label for="date">Выберите дату</label>
+                            <input type="date" name="date" id="date">
+
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

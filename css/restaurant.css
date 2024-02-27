@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+  
+  
+.oswald{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.wrapper {
+    background-color: rgba(0, 200, 0, 0.5);
+    width: 1388px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.card {
+    background-color: antiquewhite;
+    width: 1000px;
+    margin: 0 auto;
+    /* width: 100%; */
+    background-image: url("/images/pt1.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+h1, h2 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+.content {
+    width: 900px;
+    margin: 0 auto;
+    /* background-color: rgba(255, 255, 255,0.3); */
+}
+
+fieldset {
+    background-image: url("/images/pt2.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+
+fieldset table {
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+    width: 478px;
+}
+
+td {
+    height: 40px;
+}
+
+table label {
+    margin-right: 80px;
+}
+
+label {
+    margin: 0px;
+}
+
+input[type="text"],[type="email"]  {
+    width: 300px;
+}
+
+.input-div {
+    /* background-color: aquamarine; */
+    width: 478px;
+    margin: 15px auto;
+}

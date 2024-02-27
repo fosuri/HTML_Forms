@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<div class="wrapper">
+    <a href="/index.html">
+        <div class="nav">
+            <p>Main</p>
+        </div>
+    </a>
+    <div class="card">
+        <div class="content">
+            <h1>Регистрация подписчика</h1>
+            <form>
+                <div class="form">
+                <div class="input-div">
+                    <label for="name">Как вас зовут?</label>
+                    <input type="text" name="name" style="flex-grow: 1;">
+                </div>
+
+                <div class="input-div">
+                    <label for="country">Страна проживания?</label>
+                    <input type="text" name="country">
+                </div>
+
+                <div class="input-div">
+                    <label for="email">Ваш адрес электронной <br> почты?</label>
+                    <input type="email" name="email">
+                </div>
+
+                <div class="input-div">
+                    <label for="sex">Ваш пол?</label>
+                    <input type="radio" name="sex" value="1"> <label for="sex">Женский</label>
+                    <input type="radio" name="sex" value="2"> <label for="sex">Мужской</label>
+                </div>
+
+                <div class="input-div">
+                    <label for="age">Укажите возраст</label>
+                    <input type="number" id="age" name="age" min="16" max="100">
+                </div>
+
+                <div class="other-input-div">
+                    <label for="skill">Ваш уровень владения компьютером:</label><br>
+                    <input type="radio" name="skill" value="1"> <label for="skill">Начальный</label> <br>
+                    <input type="radio" name="skill" value="2"> <label for="skill">Средний</label> <br>
+                    <input type="radio" name="skill" value="3"> <label for="skill">Профессиональный</label> <br>
+                    <input type="radio" name="skill" value="4"> <label for="skill">Не владею</label> <br>
+                </div>
+
+                <div class="other-input-div">
+                    <label for="info">Откуда о нас узнали?</label>
+                    <select name="info">
+                        <option value="1">-</option>
+                        <option value="2">Интернет</option>
+                        <option value="3">Печатные издания</option>
+                        <option value="4">Посоветовали знакомые</option>
+                        <option value="5">Телевидиние</option>
+                    </select>
+                </div>
+
+
+                <div class="other-input-div ">                    
+                    <label for="addinfo">Дополнительная информация</label>
+                    <br>
+                    <br>
+                    <textarea name="message" id="addinfo"></textarea>
+                </div>
+
+                <div class="other-input-div ">                    
+                    <label for="date">Дата подписки</label>
+                    <input type="date" name="date" id="date" value="mm/dd/yyyy">
+                </div>
+
+
+                <table>
+                    <tr>
+                        <td><input type="submit" value="Подписаться"></td>
+                        <td><input type="reset" value="Очистить"></td>
+                    </tr>
+                </table>
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

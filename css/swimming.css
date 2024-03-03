@@ -1,0 +1,261 @@
+body {
+    background-color: #3D3B40;
+    color: #F8EDFF;
+    background-image: url("/images/bg_b.png");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.oswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.wrapper {
+    width: 1388px;
+    margin: auto;
+    /* background-color: rgba(200, 200, 200, 0.5); */
+    /* background-color: #3D3B40; */
+    
+}
+
+header {
+    background-color: #525CEB;
+    /* margin-top: -8px; */
+    /* position: fixed; */
+    width: 1388px;
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 5px #BFCFE7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+header img {
+    width: 70px; 
+    height: auto;
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;   
+}
+
+header h1 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    float: left;
+    position: relative;
+    top: 15px;
+    font-size: 34px;
+}
+
+
+.header-nav {
+    margin-left: 50px;
+    float: left;
+    position: relative;
+    font-size: 20px;
+    top: 25px;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    color: #F8EDFF;
+    text-decoration: none;
+}
+
+
+
+.aside-left {
+    width: 388px;
+    /* background-color: green; */
+    float: left;
+    position: sticky;
+    top: 0px;
+    margin-top: 2px;
+    border: 2px solid #F8EDFF;
+    margin: 0 auto;
+    /* background-color: green; */
+    border-radius: 14px;
+    background-color: rgba(61, 59, 64,0.5);
+}
+
+nav {
+    font-size: 20px;
+    padding: 30px 40px;
+}
+
+ol {
+    margin: 0;
+}
+
+li {
+    margin: 6px 0px;
+}
+
+nav a:hover {
+    background-color: #525CEB;
+}
+
+nav li:hover {
+    background-color: #525CEB;
+}
+
+
+main {
+    width: 1000px;
+    /* background-color: cadetblue; */
+    margin-left: 388px;
+    /* margin-top: -58px; */
+}
+
+section {
+    width: 1000px;
+    margin: 0 auto;
+    /* background-color: greenyellow; */
+    
+}
+
+article {
+    border: 2px solid #F8EDFF;
+    width: 800px;
+    margin: 0 auto;
+    /* background-color: green; */
+    padding: 20px 40px;
+    border-radius: 30px;
+    background-color: rgba(61, 59, 64,0.5);
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 30px;
+    padding: 10px 0px;
+    margin: 0;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 26px;
+    padding: 10px 0px;
+    margin: 0;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 22px;
+    margin: 10px 0px;
+    margin: 0;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+select {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #F8EDFF;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: #F8EDFF;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+
+option {
+    background-color: #525CEB;
+}
+
+.input-div {
+    margin-bottom: 20px;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #F8EDFF;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: #F8EDFF;
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+.FLname1 {
+    width: 380px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.FLname2 {
+    width: 380px;
+    float: left;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+
+::placeholder {
+    color: #F8EDFF;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 10px 0px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin: 10px 0px;
+}
+
+.other-label {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0;
+    margin: 10px 0px;
+}
+
+textarea {
+    max-width: 800px;
+}
+
+.button-div table{
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.button-div table input {
+    width: 200px;
+    margin: 10px;
+}
+
+.button_ate {
+    background-image: url("/images/bg_b_40.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 10px;
+}

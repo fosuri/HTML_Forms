@@ -1,3 +1,9 @@
+body {
+    background-image: url("/images/bgp_b1.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -63,6 +69,9 @@ legend {
     border: 2px solid white;
     padding: 10px 20px;
     border-radius: 10px;
+    background-image: url("/images/bgp_b.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 
@@ -131,4 +140,17 @@ select {
     border-radius: 10px;
     border: 2px solid white;
     padding: 10px;
+}
+
+.nav {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    /* background-color: aquamarine; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
 }

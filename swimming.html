@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swimming</title>
+    <link rel="stylesheet" href="css/swimming.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="/images/swimming_logo_w.png" alt="logo">
+            <h1>Swimming Sport Club</h1>
+            <a class="header-nav" href="/index.html">На главную</a>
+        </header>
+        
+        <aside class="aside-left">
+            <div class="sticky">
+                <nav>
+                    <a href="#1">Информация</a>
+                    <ol>
+                        <a href="#2"><li>Выбор соревнования</li></a>
+                        <a href="#3"><li>Персональные данные</li></a>
+                        <a href="#4"><li>Спортивные данные</li></a>
+                        <a href="#5"><li>Контактные данные</li></a>
+                    </ol>
+                </nav>
+            </div>
+        </aside>
+
+        <main>
+            <form>
+            <section>
+                <article>
+                    <h2 id="1">Регистрации на соревнования по плаванию</h2>
+                    <p>
+                        Примите участие в наших спортивных соревнованиях по плаванию! Заполните форму регистрации ниже, чтобы зарегистрироваться на выбранные дисциплины и дистанции. Пожалуйста, укажите все необходимые данные, чтобы мы могли обеспечить плавное и успешное проведение соревнований. Все ваши персональные данные будут обработаны в соответствии с нашей политикой конфиденциальности.
+                    </p>
+
+                    <h3 id="2">Выбор соревнования</h3>
+
+                    <div class="input-div">
+                        <label for="info">Дисциплина</label>
+                        <br>
+                        <select name="info">
+                            <option value="1">Выберите из списка</option>
+                            <option value="2">Вольный стиль</option>
+                            <option value="3">Брасс</option>
+                            <option value="4">Баттерфляй</option>
+                            <option value="5">Спина</option>
+                            <option value="6">Индивидуальное комплексное плавани</option>
+                            <option value="7">Эстафеты</option>
+                        </select>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="date">Дата соревнования:</label>
+                        <br>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    
+                    <h3 id="3">Персональные данные</h3>
+                    <div class="input-div">
+                        <div class="FLname1">
+                            <label for="fname">Имя</label>
+                            <input type="text" name="fname" id="fname" placeholder="Введите имя">
+                        </div>
+                        <div class="FLname2">
+                            <label for="lname">Фамилия </label>
+                            <input type="text" name="lname" id="lname" placeholder="Введите фамилию">
+                        </div>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="bdate">Дата рождения:</label>
+                        <br>
+                        <input type="date" name="bdate" id="bdate">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="sex">Пол</label><br>
+                        <input type="radio" name="sex" value="1"> <label class="other-label" for="sex">Мужской</label> <br>
+                        <input type="radio" name="sex" value="2"> <label class="other-label" for="sex">Женский</label> <br>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="age">Возрастная категория</label>
+                        <br>
+                        <select name="age">
+                            <option value="1">Выберите из списка</option>
+                            <option value="2">до 10 лет</option>
+                            <option value="3">11-13 лет</option>
+                            <option value="4">14-16 лет</option>
+                            <option value="5">17-20 лет</option>
+                            <option value="6">21-30 лет</option>
+                        </select>
+                    </div>
+
+                    <h3 id="4">Спортивные данные</h3>
+
+                    <div class="input-div">
+                        <label for="types">Беговые виды</label>
+                        <br>
+                        <input type="checkbox" name="type1" id="type1" value="yes">
+                        <label class="other-label" for="type1">Вольный стиль</label>
+                        <br>
+                        <input type="checkbox" name="type2" id="type2" value="yes">
+                        <label class="other-label" for="type2">Брасс</label>
+                        <br>
+                        <input type="checkbox" name="type3" id="type3" value="yes">
+                        <label class="other-label" for="type3">Баттерфляй</label>
+                        <br>
+                        <input type="checkbox" name="type4" id="type4" value="yes">
+                        <label class="other-label" for="type4">Спина</label>
+                        <br>
+                        <input type="checkbox" name="type5" id="type5" value="yes">
+                        <label class="other-label" for="type5">Индивидуальное комплексное плавани</label>
+                        <br>
+                        <input type="checkbox" name="type6" id="type6" value="yes">
+                        <label class="other-label" for="type6">Эстафеты</label>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="distances">Дистанции</label>
+                        <br>
+                        <input type="checkbox" name="distance1" id="distance1" value="yes">
+                        <label class="other-label" for="distance1">100 метров</label>
+                        <br>
+                        <input type="checkbox" name="distance2" id="distance2" value="yes">
+                        <label class="other-label" for="distance2">200 метров</label>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="level">Возрастная категория</label>
+                        <br>
+                        <select name="level">
+                            <option value="1">Выберите из списка</option>
+                            <option value="2">III(ю)</option>
+                            <option value="3">II(ю)</option>
+                            <option value="4">I(ю)</option>
+                            <option value="5">III</option>
+                            <option value="6">II</option>
+                            <option value="7">I</option>
+                            <option value="8">КМС</option>
+                            <option value="9">МС</option>
+                            <option value="10">МСМК</option>
+                        </select>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="club">Клуб, организация</label>
+                        <input type="text" name="club" id="club" placeholder="Введите название">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="coach">Тренер</label>
+                        <input type="text" name="coach" id="coach" placeholder="Введите ФИО тренра">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="experience">Спортивный опыт</label>
+                        <textarea name="message" id="experience" cols="120" rows="5" placeholder="Спортивный опыт"></textarea>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="achievements">Достижения</label>
+                        <textarea name="message" id="achievements" cols="120" rows="5" placeholder="Достижения"></textarea>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="pdata">Обработка персональных данных</label>
+                        <br>
+                        <input type="checkbox" name="pdata" id="pdata" value="yes">
+                        <label class="other-label" for="pdata">Я согласен/согласна на обработку персональных данных.</label>
+                    </div>
+
+                    <h3 id="5">Контактные данные</h3>
+                    <div class="input-div">
+                        <label for="tel">Телефон</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Введите номер телефона">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Введите адрес электронной почты">
+                    </div>
+
+                    <div class="input-div">
+                        <label for="wdate">Дата рождения:</label>
+                        <br>
+                        <input type="date" name="wdate" id="wdate">
+                    </div>
+
+                    <div class="button-div">
+                        <table>
+                            <tr>
+                                <td><input type="submit" value="Отправить" class="button_ate"></td>
+                                <td><input type="reset" value="Очистить" class="button_ate"></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </article>
+            </section>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>

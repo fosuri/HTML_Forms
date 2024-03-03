@@ -16,7 +16,7 @@ html {
 }
 
 .wrapper {
-    background-color: rgba(0, 200, 0, 0.5);
+    /* background-color: rgba(0, 200, 0, 0.5); */
     width: 1388px;
     margin: 0 auto;
 }
@@ -31,7 +31,7 @@ body {
     width: 1000px;
     margin: 0 auto;
     /* width: 100%; */
-    background-image: url("/images/pt1.png");
+    background-image: url("/images/bgp_b1.png");
     background-repeat: repeat;
     background-attachment: fixed;
 }
@@ -50,9 +50,19 @@ h1, h2 {
 }
 
 fieldset {
-    background-image: url("/images/pt2.png");
+    background-image: url("/images/bgp_b.png");
     background-repeat: repeat;
     background-attachment: fixed;
+    border: 2px solid white;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+legend {
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 
@@ -66,20 +76,59 @@ td {
     height: 40px;
 }
 
+
+
 table label {
-    margin-right: 80px;
+    margin-right: 30px;
 }
 
 label {
     margin: 0px;
+    font-size: 20px;
+}
+
+input {
+    font-size: 20px;
 }
 
 input[type="text"],[type="email"]  {
     width: 300px;
+    height: 22px;
+    font-size: 16px;
 }
 
 .input-div {
     /* background-color: aquamarine; */
     width: 478px;
     margin: 15px auto;
+
+}
+
+textarea {
+    max-width: 478px;
+    font-size: 20px;
+}
+
+select {
+    font-size: 18px;
+}
+
+.button-div table{
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.button-div table input {
+    width: 200px;
+    margin: 10px;
+}
+
+.button_ate {
+    background-image: url("/images/bgp_b.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 10px;
 }

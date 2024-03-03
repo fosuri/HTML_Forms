@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blurred Fieldset Background</title>
+<style>
+  /* Apply backdrop filter to blur the background */
+  .blurry-fieldset {
+    background-color: rgba(161, 53, 53, 0.6); /* Set a semi-transparent background color */
+    border: none; /* Remove default fieldset border */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    padding: 20px; /* Optional: Add padding */
+    filter: blur(10px); /* Fallback for browsers that don't support backdrop-filter */
+  }
+</style>
+</head>
+<body>
+
+<fieldset class="blurry-fieldset">
+  <legend>Blurred Fieldset</legend>
+  <p>This is some content inside a blurred fieldset.</p>
+</fieldset>
+
+</body>
+</html>
